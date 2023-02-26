@@ -1,6 +1,6 @@
 # slogan
 
-A new Flutter project.
+Store Shopping Online App.
 
 ## Getting Started
 
