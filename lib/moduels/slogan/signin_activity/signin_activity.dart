@@ -167,7 +167,7 @@ class SignInActivity extends StatelessWidget {
                               onPressed: () {
                                 Navigator.of(context).pushReplacement(
                                     MaterialPageRoute(
-                                        builder: (context) => const Scaffold()));
+                                        builder: (context) => const SignUpActivity()));
                               },
                               child: const Text("Sign Up"),
                             ),
