@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:slogan/components/constants/constants.dart';
 import 'package:slogan/moduels/slogan/home_activity/home_activity.dart';
@@ -19,6 +20,8 @@ void main() async {
   await DioHelper.init();
   await SharedPreferenceHelper.init();
   Bloc.observer = MyBlocObserver();
+  SystemChrome.setEnabledSystemUIMode(SystemUiMode.manual, overlays: []);
+
 
   Object? onBoardingSkip =
       SharedPreferenceHelper.getData(key: "onBoardingSkip");
